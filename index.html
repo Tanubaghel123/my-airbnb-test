@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Demo | Test Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .card-shadow { transition: transform 0.2s; }
+        .card-shadow:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <header class="sticky top-0 z-50 bg-white border-b px-6 py-4 flex items-center justify-between">
+        <div class="text-rose-500 text-3xl font-bold flex items-center gap-2">
+            <i class="fa-brands fa-airbnb"></i>
+            <span class="hidden md:inline">airbnb</span>
+        </div>
+        
+        <div class="flex items-center border rounded-full px-4 py-2 shadow-sm hover:shadow-md cursor-pointer transition">
+            <span class="text-sm font-semibold px-2">Anywhere</span>
+            <span class="border-l h-4"></span>
+            <span class="text-sm font-semibold px-2">Any week</span>
+            <span class="border-l h-4"></span>
+            <span class="text-sm text-gray-500 px-2">Add guests</span>
+            <div class="bg-rose-500 text-white p-2 rounded-full ml-2">
+                <i class="fa-solid fa-magnifying-glass text-xs"></i>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <span class="text-sm font-semibold hidden md:block">Airbnb your home</span>
+            <i class="fa-solid fa-globe"></i>
+            <div class="flex items-center border rounded-full p-1 px-2 gap-2 hover:shadow-md cursor-pointer">
+                <i class="fa-solid fa-bars text-sm"></i>
+                <div class="bg-gray-500 text-white rounded-full p-1">
+                    <i class="fa-solid fa-user text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="card-shadow cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=400" class="rounded-xl aspect-square object-cover mb-3" alt="Cabin">
+                <div class="flex justify-between font-semibold">
+                    <span>Joshua Tree, California</span>
+                    <span>★ 4.92</span>
+                </div>
+                <p class="text-gray-500">Hosted by Sarah</p>
+                <p class="text-gray-500">Oct 22 – 27</p>
+                <p class="mt-1"><span class="font-bold">$245</span> night</p>
+            </div>
+
+            <div class="card-shadow cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=400" class="rounded-xl aspect-square object-cover mb-3" alt="Beachfront">
+                <div class="flex justify-between font-semibold">
+                    <span>Malibu, California</span>
+                    <span>★ 4.88</span>
+                </div>
+                <p class="text-gray-500">Stay with views</p>
+                <p class="text-gray-500">Nov 1 – 6</p>
+                <p class="mt-1"><span class="font-bold">$510</span> night</p>
+            </div>
+
+            <div class="card-shadow cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&w=400" class="rounded-xl aspect-square object-cover mb-3" alt="Modern">
+                <div class="flex justify-between font-semibold">
+                    <span>Aspen, Colorado</span>
+                    <span>★ 5.0</span>
+                </div>
+                <p class="text-gray-500">Luxury Chalet</p>
+                <p class="text-gray-500">Dec 12 – 17</p>
+                <p class="mt-1"><span class="font-bold">$890</span> night</p>
+            </div>
+
+            <div class="card-shadow cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=400" class="rounded-xl aspect-square object-cover mb-3" alt="Pool">
+                <div class="flex justify-between font-semibold">
+                    <span>Miami, Florida</span>
+                    <span>★ 4.75</span>
+                </div>
+                <p class="text-gray-500">Penthouse with Pool</p>
+                <p class="text-gray-500">Oct 30 – Nov 4</p>
+                <p class="mt-1"><span class="font-bold">$320</span> night</p>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around py-3 text-gray-500">
+        <div class="flex flex-col items-center text-rose-500">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="text-[10px]">Explore</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <i class="fa-regular fa-heart"></i>
+            <span class="text-[10px]">Wishlists</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <i class="fa-regular fa-user"></i>
+            <span class="text-[10px]">Log in</span>
+        </div>
+    </div>
+
+</body>
+</html>
